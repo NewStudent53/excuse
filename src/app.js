@@ -1,5 +1,3 @@
-import "../src/style.css";
-
 window.onload = () => {
   document.querySelector("#btn").addEventListener("click", () => {
     document.querySelector("#the-excuse").innerHTML = generateExcuse();
