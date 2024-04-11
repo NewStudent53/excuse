@@ -1,3 +1,5 @@
+// Ya no puedo mas 10/04/2024
+
 window.onload = () => {
   document.querySelector("#btn").addEventListener("click", () => {
     document.querySelector("#the-excuse").innerHTML = generateExcuse();
@@ -6,27 +8,24 @@ window.onload = () => {
 };
 
 let generateExcuse = () => {
-  let pronoun = ["A", "The"];
-  let subject = ["jogger", "racoon", "dog", "driver", "comedian", "pincone"];
-  let action = ["took my", "threw my", "yelled at my", "stole my", "bit my"];
-  let possetion = ["homework", "toe", "car", "shoe"];
-  let where = ["on the street", "in my house", "in my driveway"];
 
-  let proIndex = Math.floor(Math.random() * pronoun.length);
-  let subjIndex = Math.floor(Math.random() * subject.length);
-  let actionIndex = Math.floor(Math.random() * action.length);
-  let possetionIndex = Math.floor(Math.random() * possetion.length);
-  let whereIndex = Math.floor(Math.random() * where.length);
-
+  let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+  let action = ['ate', 'peed', 'crushed', 'broke'];
+  let what = ['my homework', 'my phone', 'the car'];
+  let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
+  
+  let whoIndex = Math.floor(Math.random() * who.length);
+  let actIndex = Math.floor(Math.random() * action.length);
+  let whaIndex = Math.floor(Math.random() * what.length);
+  let wheIndex = Math.floor(Math.random() * when.length);
+  
   return (
-    pronoun[proIndex] +
+    who[whoIndex] +
     " " +
-    subject[subjIndex] +
+    action[actIndex] +
     " " +
-    action[actionIndex] +
+    what[whaIndex] +
     " " +
-    possetion[possetionIndex] +
-    " " +
-    where[whereIndex]
+    when[wheIndex]
   );
 };
