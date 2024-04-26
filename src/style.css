@@ -1,1 +1,56 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body{
+    background: green;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: aliceblue;
+    margin: auto;
+    position: absolute;
+    left: 150px;
+}
+
+.card{
+    background: aliceblue;
+    font-size: 90px;
+    height: 300px;
+    margin:auto;
+    padding: 20px;
+    position: relative; 
+    text-align: center;
+    width: 200px;
+}
+
+.card.club p::before , .card.club p::after{
+    content: '♣';
+    color: rgb(58, 238, 178);
+}
+
+.card.diamond p::before , .card.diamond p::after{
+    content: '♦';
+    color: rgb(224, 42, 42);
+}
+
+.card.heart p::before , .card.heart p::after{
+    content: '♥';
+    color: rgb(86, 0, 0);
+}
+
+.card.spade p::before , .card.spade p::after{
+    content: '♠';
+    color: rgb(8, 176, 120);
+}
+
+p::before{
+   content: '';
+    position: absolute;
+    top:-5px;
+    left:20px;
+    }
+
+p::after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right:20px;
+}
