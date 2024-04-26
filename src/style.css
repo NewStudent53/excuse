@@ -7,7 +7,7 @@ button{
     background-color: aliceblue;
     margin: auto;
     position: relative;
-    left: 100%;
+    text-align: right;
 }
 
 .card{
