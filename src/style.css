@@ -6,8 +6,8 @@ body{
 button{
     background-color: aliceblue;
     margin: auto;
-    position: absolute;
-    right: 350px;
+    position: relative;
+    left: 550px;
 }
 
 .card{
